@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['submit'])) {
-    $data = "Hello " . getName($_POST['name']) . "!" . " You are " . getBirthDate($_POST['dateof']) . " years old";
+    $data = "\"Hello " . getName($_POST['name']) . "!" . " You are " . getBirthDate($_POST['dateof']) . " years old!\"";
 }
 
 function getName($name)
@@ -42,24 +42,19 @@ function getBirthDate($age)
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://gitcdn.link/repo/Junzlay/neumorph-age-calculator/main/style.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="footer.css">
-=======
->>>>>>> f84573f4b580f1ba42d1039c07780ddc3e4c5137
+    <link rel="stylesheet" href="https://raw.githack.com/Junzlay/neumorph-age-calculator/main/footer.css">
 </head>
+<!-- <link rel="stylesheet" href="proxy.php?link=https://raw.githubusercontent.com/Junzlay/neumorph-age-calculator/main/footer.css"> -->
 <script>
     if (window.history.replaceState) {
         window.history.replaceState(null, null, window.location.href);
     }
 </script>
-
 <body>
-
-
     <div class="container-fluid h-100">
         <div class="row justify-content-center align-items-center h-100">
             <div class="col col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                <form action="" method="POST">
+                <form action="" method="POST" class="w-100">
                     <h3 class="text-center">Age Calculator</h3>
                     <hr class="bg-light" style="opacity: 0.5;">
                     <div class="form-group">
@@ -69,24 +64,16 @@ function getBirthDate($age)
 
                     <div class="form-group mb-4">
                         <label for="exampleInputEmail1">Date of Birth</label>
-<<<<<<< HEAD
-                        <input class="form-control form-control-lg text-light" id="datefield" placeholder="Enter Date of Birth" required name="dateof" type="date">
-=======
                         <input class="form-control form-control-lg text-light" min='1899-01-01' max='2000-13-13' id="datefield" placeholder="Enter Date of Birth" required name="dateof" type="date">
->>>>>>> f84573f4b580f1ba42d1039c07780ddc3e4c5137
                     </div>
                     <div class="form-group mt-2">
                         <button name="submit" type="submit" class="btn btn-info btn-lg text-dark btn-block">Submit Now</button>
                     </div>
-                    <p class="text-center name small text-light mt-5"><?= isset($_POST['submit']) ? $data : '' ?></p>
+                    <p class="text-center name small text-light mt-5 font-italic text-nowrap"><?= isset($_POST['submit']) ? $data : '' ?></p>
                 </form>
-<<<<<<< HEAD
                 <div class="love-footer text-center mx-auto row align-items-center mt-4  ">
         <p class="text-light text-center mt-3">Made with ❤ by <span class="ml-2"> <a target="_blank" href="https://www.linkedin.com/in/junmar-layaog-undefined/">undefined</a></span></p>
         </div>
-=======
-               
->>>>>>> f84573f4b580f1ba42d1039c07780ddc3e4c5137
             </div>
            
         </div>
