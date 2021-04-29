@@ -1,0 +1,84 @@
+.love-footer{
+    text-shadow: rgba(255,255,255,0.9) 0px 0px 36px;
+height: 100%;
+    border-radius: 19px;
+background: #4548e8;
+box-shadow: 11px 11px 29px #393bbe,
+    -11px -11px 29px #5155ff;
+}
+
+.love-footer p{
+margin-left: 40px;
+}
+.love-footer a{
+    position: absolute;
+    text-shadow: rgba(255,255,255,0.9) 0px 0px 36px;
+    color: white;
+    -webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+-webkit-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+}
+
+a:hover{
+text-decoration: none;
+text-shadow: rgba(255,255,255,1) 0px 0px 19px;
+animation-name: bounce;
+}
+
+@keyframes bounce {
+0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    -ms-transform:     translateY(0);
+    transform:         translateY(0)
+}
+40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform:     translateY(-30px);
+    transform:         translateY(-30px)
+}
+60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform:     translateY(-15px);
+    transform:         translateY(-15px)
+}
+}
+
+@media  (max-width: 768px) {
+    .love-footer p{
+        margin-left: 45px;
+        
+        }
+}
+@media(max-width: 731px){
+    .love-footer p{
+        margin-right: 10px;
+        
+        }
+}
+
+
+
+@media(max-width: 932px){
+    .love-footer p{
+        margin-left: 80px;
+        
+        }
+}
+@media(max-width: 640px){
+    .love-footer p{
+        margin-left: 45px;
+        
+        }
+}
+@media(max-width: 512px){
+    .love-footer p{
+        margin-left: 125px;
+        
+        }
+}
+
